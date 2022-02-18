@@ -14,26 +14,21 @@ public class Ex01Condicional08 {
 		Scanner entrada = new Scanner(System.in);
 		
 		//Entrada dos dados
-		int num;
+		int n;
 		
 		System.out.println("Digite um número inteiro: ");
-		num = entrada.nextInt();
+		n = entrada.nextInt();
 		
 		
 		//Processamentos e saída dos dados 		
-		if(num > 100) {
-			System.out.println("O valor digitado foi: " + num);
+		if(n > 100) {
+			System.out.println("O valor digitado foi: " + n);
 		} 
-		else if (num == 0){ 
-			System.out.println("O valor digitado foi ZERO!");
-		} 
-		else if (num < 100){
-			System.out.println("O valor digitado foi: " + num);
+		
+		else {
+			System.out.println("ZERO");
 		}
-//		else {
-//			System.out.println("ZERO");
-//		}
-//		//n == (float
+
 	}
 
 }
