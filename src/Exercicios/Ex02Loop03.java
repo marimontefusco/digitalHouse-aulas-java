@@ -2,7 +2,7 @@ package Exercicios;
 
 import java.util.Scanner;
 
-public class EX02Loop03 {
+public class Ex02Loop03 {
 
 	public static void main(String[] args) {
 		/* Ex 03 LOOP WHILE
@@ -16,8 +16,8 @@ public class EX02Loop03 {
 		int idade = 0, menos21 = 0, mais50 = 0;
 		
 		while(idade != -99 ) {		
-			System.out.println("Por favor, digite sua idade: "
-					+ "\n\nAtenção: caso queira finalizar o programa, digite: -99");
+			System.out.println("Por favor, digite sua idade, "
+					+ "\nAtenção: Caso queira finalizar o programa, digite: -99");
 			idade = scan.nextInt();
 			
 			if (idade < 21) {
