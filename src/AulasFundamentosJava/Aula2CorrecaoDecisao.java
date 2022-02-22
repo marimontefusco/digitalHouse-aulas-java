@@ -37,7 +37,7 @@ public class Aula2CorrecaoDecisao {
 	
 		} 
 		else {
-				System.out.println("\nEste número não é válido. \nPor favor, digite novamente.");
+			System.out.println("\nEste número não é válido. \nPor favor, digite novamente.");
 		}
 					
 	}
