@@ -1,4 +1,4 @@
-package PortoSeguro;
+package AulasFundamentosJava;
 
 import java.util.Scanner;
 
