@@ -12,7 +12,7 @@ public class TesteFuncionario {
 		lista[1] = new Funcionario("Lucas Theberge", 11000);
 		lista[2] = new Funcionario("Leticia Toffoli", 30000);
 		
-		//For Each -> a partir da primeira posiçao até a ultima posiçao
+		//For Each -> a partir da primeira posição até a última posição
 		//chama o objeto lista
 		//a partir da classe Funcionario
 		//lista é qual objeto eu quero rodar
@@ -29,8 +29,7 @@ public class TesteFuncionario {
 		}
 		
 		System.out.println("****************");
-		
-		
+			
 	}
 
 }

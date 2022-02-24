@@ -3,11 +3,12 @@ package AulasPOO;
 import java.text.NumberFormat;
 
 public class Funcionario {
-	//Criação dos atributos
+	//ATRIBUTOS da classe Funcionario
 	private String nome;
 	private double salario;
 	
-	//Construtor: mesmo nome da classe
+	
+	//CONSTRUTOR -> mesmo nome da classe
 	public Funcionario(String nome, double salario) {
 		this.setNome(nome);
 		this.setSalario(salario);
@@ -17,6 +18,8 @@ public class Funcionario {
 		//chamando o parâmetro através do setNome(modificador)-> vai inserir um dado dentro do meu atributo
 	}
 
+	
+	//Métodos GET & SET
 	public String getNome() {
 		return nome;
 	}
@@ -33,32 +36,38 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	//Criacáo d eum método meu:
+	
+	//Método próprio -> aumentar salário com percentual
 	public void aumentarSalario(double percentualAumento) {
-		salario *= 1 + percentualAumento / 100; //formula pra encontrar o salario já acrescido do percentual de aumento
+		salario *= 1 + percentualAumento / 100; 
+		//fórmula pra encontrar o salario já acrescido do percentual de aumento
 	}
 	
+	
+	//Método próprio -> formatar salário
 	public String formatarMoeda(){
 		NumberFormat nf = NumberFormat.getCurrencyInstance();
-		//coloca a moeda do país
-		//nf é uma variavel, nao é um objeto pq nao foi instanciado
-		//getCurrencyInstance() -> metodo q pega a moeda do seu pais
+		//nf é uma variável, nao é um objeto pq não foi instanciado
 		
 		nf.setMinimumFractionDigits(2);
-		//indica a qntidade de casas depois da virgula
 		
-		//criar var String
 		String formatoMoeda =  nf.format(salario);
 		return formatoMoeda;
-		//formata um valor para uma formatação monetária ->> salario, o atributo salario
-		//0.000,00
+		//
 	}
 	
+	
+	//Método próprio -> imprimir resultado
 	public void imprimir() {
 		System.out.println(nome + " \t\t\t "+ "Salário: " + this.formatarMoeda());
 	}
-	//chamando um método da minha própria classe
-	//this pq to me referindo a um metodo da minha propria classe
 	
 	
 }
+
+//formatarMoeda() -> formata um valor para tipo monetário -> 000.000,00
+//getCurrencyInstance() -> método q pega a moeda do seu pais
+//setMinimumFractionDigits(2) -> formata casas decimais após a vírgula para (2)
+
+// this.formatarMoeda() -> chamando um método da minha própria classe
+//this pq to me referindo à um método da minha própria classe
