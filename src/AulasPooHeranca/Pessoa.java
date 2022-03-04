@@ -8,14 +8,28 @@ public class Pessoa {
 	private int telefone;
 	private int idade;
 	
-	//CONSTRUTOR -> inicializando meus atributos!
+	//CONSTRUTOR -> classe Funcionario e Operario
 	public Pessoa(String nome, String endereco, String cpf, int telefone, int idade) {
 		this.nome = nome;
 		this.endereco = endereco;
 		this.cpf = cpf;
 		this.telefone = telefone;
 		this.idade = idade;
-	  //this.atributo = parametro 
+	}
+	
+	//CONSTRUTOR -> classe Fornecedor
+	public Pessoa(String nome, String endereco, int telefone) {
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+	}
+	
+	//CONSTRUTOR -> classe Cliente
+	public Pessoa(String nome, String endereco, String cpf, int telefone) {
+		this.nome = nome;
+		this.endereco = endereco;
+		this.cpf = cpf;
+		this.telefone = telefone;
 	}
 
 	//MÉTODOS GET & SET
@@ -59,6 +73,7 @@ public class Pessoa {
 		this.idade = idade;
 	}
 	
+	
 	//OUTRO MÉTODO específico da classe Pessoa
 	public void validarCpf() {
 		if (getCpf().length() != 11) {
@@ -67,12 +82,12 @@ public class Pessoa {
 			System.out.println("\n----CPF Válido");
 		}
 	}
-	
+
 }
 
 
 
-//Os atributo são do tipo privado e não podem ser instanciados por outra classe
+//Os atributos são do tipo privado e não podem ser instanciados por outra classe
 //Por isso, usamos o método construtor da minha própria classe -> passando os 
 //parametros pra fazer a inicialização dos meus atributos e manipular esses dados
 

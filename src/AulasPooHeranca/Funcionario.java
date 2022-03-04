@@ -1,7 +1,5 @@
 package AulasPooHeranca;
 
-import java.text.NumberFormat;
-
 public class Funcionario extends Pessoa {
 	//ATRIBUTOS expecíficos da classe  Funcionario
 	private int codigoSetor;
